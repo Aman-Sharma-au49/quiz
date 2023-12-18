@@ -11,7 +11,10 @@ function nextquiz(event) {
     } else if(!emailInput.value.trim().toLowerCase().endsWith("@gmail.com") && !emailInput.value.trim().toLowerCase().endsWith("@fosteringlinux.com")) {
         alert("Please fill out correct gmail");
         return false;
-    }
+    } else if(phoneInput.value.trim().length !== 10 && phoneInput.value.trim().length !== 0 ) {
+        alert("Please fill out correct Phone No");
+        return false;
+    } 
 
     window.location.href = "a.html";
 
