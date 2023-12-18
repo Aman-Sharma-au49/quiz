@@ -8,7 +8,7 @@ function nextquiz(event) {
     if (nameInput.value.trim() === "" || phoneInput.value.trim() === "" || emailInput.value.trim() === "") {
         alert("Please fill out all required fields.");
         return false;
-    } else if(!emailInput.value.trim().toLowerCase().endsWith("@gmail.com")) {
+    } else if(!emailInput.value.trim().toLowerCase().endsWith("@gmail.com") && !emailInput.value.trim().toLowerCase().endsWith("@fosteringlinux.com")) {
         alert("Please fill out correct gmail");
         return false;
     }
