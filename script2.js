@@ -5,7 +5,7 @@ function nextquiz(event) {
     var emailInput = document.querySelector('input[type="email"]');
     var phoneInput = document.querySelector('input[type="tel"]');
 
-    if (nameInput.value.trim() === "" || phoneInput.value.trim() === "" || emailInput.value.trim() === "") {
+    if (nameInput.value.trim() === "" || phoneInput.value.trim() === "" && emailInput.value.trim() === "") {
         alert("Please fill out all required fields.");
         return false;
     } else if(!emailInput.value.trim().toLowerCase().endsWith("@gmail.com") && !emailInput.value.trim().toLowerCase().endsWith("@fosteringlinux.com")) {
